@@ -22,3 +22,12 @@ if (yourAge < 18) {
     document.getElementById("discount").innerHTML = discount40 + "€";
     console.log(discount40 + "€")
   }
+
+  if (yourAge < 18) {
+    document.getElementById("total").innerHTML = (ticketPrice - discount20).toFixed(2) + "€";
+    console.log((ticketPrice - discount20).toFixed(2) + "€");
+  }
+  else if (yourAge >= 65) {
+    document.getElementById("total").innerHTML = (ticketPrice - discount40).toFixed(2) + "€";
+    console.log((ticketPrice - discount40).toFixed(2) + "€");
+  }
